@@ -5,43 +5,45 @@
 #     B. In the consequence lines, attribute values must come in the order of
 #     attribute names and separated by comma.
 #
-# The output is a decision tree and its demonstration.
+# The output is a decision field_decision_tree and its demonstration.
 
 import math
+import re
 
 
 class DecisionTree:
     def __init__(self, file_name):
         fid = open(file_name, "r")
-        data = []
+        csv = []
         d = []
         for line in fid.readlines():
             d.append(line.strip())
         for d1 in d:
-            data.append(d1.split(","))
+            csv.append(d1.split(","))
         fid.close()
 
-        self.features = self.get_features(data)
-        data = data[1:]
-        self.classes = self.get_classes(data)
-        data = self.get_pure_data(data)
-        self.training_data = data
+        self.features = self.get_csv_hearder(csv)
+        csv_data = csv[1:]
+        self.classes = self.get_classes(csv_data)
+        csv_data = self.get_pure_data(csv_data)
+        self.training_data = csv_data
 
+    #   Get Selection result of a record in CSV training data
     def get_classes(self, data):
-        data = data[1:]
         classes = []
         for d in range(len(data)):
             classes.append(data[d][-1])
 
         return classes
 
-    def get_features(self, data):
+    # Get features (CSV header without selection result column header)
+    def get_csv_hearder(self, data):
         features = data[0]
         features = features[:-1]
         return features
 
+    # Get training data without CSV header
     def get_pure_data(self, data_rows):
-        data_rows = data_rows[1:]
         for d in range(len(data_rows)):
             data_rows[d] = data_rows[d][:-1]
         return data_rows
@@ -60,14 +62,14 @@ class DecisionTree:
     def get_distinct_values(self, data_list):
         distinct_values = []
         for item in data_list:
-            if (distinct_values.count(item) == 0):
+            if distinct_values.count(item) == 0:
                 distinct_values.append(item)
         return distinct_values
 
     def get_distinct_values_from_table(self, data_table, column):
         distinct_values = []
         for row in data_table:
-            if (distinct_values.count(row[column]) == 0):
+            if distinct_values.count(row[column]) == 0:
                 distinct_values.append(row[column])
         return distinct_values
 
@@ -77,7 +79,7 @@ class DecisionTree:
         else:
             return 0
 
-    def create_tree(self, training_data, classes, features, max_level=-1, level=0):
+    def create_tree_dict(self, training_data, classes, features, max_level=-1, level=0):
         n_data = len(training_data)
         n_features = len(features)
 
@@ -97,7 +99,7 @@ class DecisionTree:
             index += 1
 
         default = classes[self.get_arg_max(frequency)]
-        if (n_data == 0 or n_features == 0 or (max_level >= 0 and level > max_level)):
+        if n_data == 0 or n_features == 0 or 0 <= max_level < level:
             return default
         elif classes.count(classes[0]) == n_data:
             return classes[0]
@@ -132,9 +134,9 @@ class DecisionTree:
                         new_classes.append(classes[index])
                     index += 1
 
-                subtree = self.create_tree(new_data, new_classes, new_names, max_level, level + 1)
-
+                subtree = self.create_tree_dict(new_data, new_classes, new_names, max_level, level + 1)
                 new_tree[features[best_feature]][value] = subtree
+
             return new_tree
 
         print(new_classes)
@@ -175,17 +177,43 @@ class DecisionTree:
             value_index += 1
         return gain
 
-    def show_tree(self, dic, seperator):
-        if (type(dic) == dict):
+    def show_tree(self, dic, separator):
+        if type(dic) == dict:
             for item in dic.items():
-                print(seperator, item[0])
-                self.show_tree(item[1], seperator + " | ")
+                print(separator, item[0])
+                self.show_tree(item[1], separator + " | ")
         else:
-            print(seperator + " -> (", dic + ")")
+            print(separator + " -> (", dic + ")")
 
+    # Evaluate a record on decision tree
+    def evaluate(self, dic, record):
+        if type(dic) != dict:
+            raise Exception('Illegal parameter. "dic" must be a dict')
+        for item in dic.items():
+            if type(item[0]) != dict:
+                current_value = record[item[0]]
+                dict_item = dict(item[1])
+                if dict_item.__contains__(current_value):
+                    decision_value = [current_value]
+                else:
+                    decision_value = self.find_key_in_range(dict_item, current_value)
+                if decision_value == 'T':
+                    return 'T'
 
-# tree = DecisionTree('restaurant.csv')
-# tree = DecisionTree('field.csv')
-tree = DecisionTree('dataset.csv')
-tree1 = tree.create_tree(tree.training_data, tree.classes, tree.features)
-tree.show_tree(tree1, ' ')
+        return 'F'
+
+    def find_key_in_range(self, dict_item, current_value):
+        range_exp = '[-+]?[0-9]*\.?[0-9]*(-)[-+]?[0-9]*\.?[0-9]*'
+        pattern = re.compile(range_exp)
+        f_current_value = float(current_value)
+
+        for key in dict_item.keys():
+            if pattern.match(key):
+                position = key.index('-')
+                from_value = float(key[0: position])
+                to_value = float(key[(position + 1):  len(key)])
+                if from_value <= f_current_value <= to_value:
+                    return dict_item[key]
+
+        else:
+            raise Exception('Cannot find ' + str(key))
