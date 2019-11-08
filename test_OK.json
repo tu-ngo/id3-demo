@@ -1,0 +1,1840 @@
+{
+  "generateViewRequest": {
+    "cloudResourceMetadata": {
+      "prefix": "",
+      "database": "dev",
+      "schema": "natu",
+      "tables": [
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "a",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "text_100",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 100,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "demo_full_createdepartment",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "l__department__name",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "cp__department",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__deleted",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "demo_full_createemployee",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "l__employee__lastname",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "cp__employee",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "r__department",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "l__employee__firstname",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__deleted",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "demo_full_createsalary",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "r__employee",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "cp__salary",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "d__salary",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "DATE",
+                "dataTypeName": "date",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__payment",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__deleted",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "department",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "cp__department",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 256,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "l__department__name",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 256,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__age",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "d__created",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "DATE",
+                "dataTypeName": "date",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__city",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 255,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__deleted",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "employee",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "cp__emp_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 256,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__name",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 256,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__age",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "orders",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "orderkey",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 12,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "agent",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "agentkey",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "quantity",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 6,
+                "precision": 0
+              },
+              "constraint": null
+            },
+            {
+              "name": "price",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            },
+            {
+              "name": "tax",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            },
+            {
+              "name": "shipdate",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "DATE",
+                "dataTypeName": "date",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "pre-customers",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "f__qty",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__csv_order_lines__state",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__csv_order_lines__note",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "l__csv_order_lines__note__note1",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "l__csv_order_lines__note__note2",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__csv_order_lines__count_num",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__deleted",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "salary",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "payment",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            },
+            {
+              "name": "employee",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "salary",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "DATE",
+                "dataTypeName": "date",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "salary_cp_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "deleted",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "test_alter",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "test1",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 8,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "test2",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 256,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "test_data_redshift",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "n_smallint",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int2",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_int2",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 20,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_integer",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_int",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_int4",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_float4",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "FLOAT",
+                "dataTypeName": "float4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_float8",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "FLOAT",
+                "dataTypeName": "float8",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_float",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "FLOAT",
+                "dataTypeName": "float8",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_real",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "FLOAT",
+                "dataTypeName": "float4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "b_bool",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "b_boolean",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "d_timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_bigint",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int8",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_decimal",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 14,
+                "precision": 4
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_numeric",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 15,
+                "precision": 6
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "test_data_redshift2",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "b_bool",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "b_boolean",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "d_timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "n_numeric",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 15,
+                "precision": 6
+              },
+              "constraint": null
+            },
+            {
+              "name": "deleted",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "test_datatype_convert",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "f__fact_int",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__fact_num",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "test_varchar",
+          "type": "TABLE",
+          "description": null,
+          "columns": [
+            {
+              "name": "v_char",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 5,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "demo_full_create_viewsalary",
+          "type": "VIEW",
+          "description": null,
+          "columns": [
+            {
+              "name": "d__salary",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "DATE",
+                "dataTypeName": "date",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__payment",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            },
+            {
+              "name": "cp__salary",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "r__employee",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__deleted",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "pre-demo_full_createemployee",
+          "type": "VIEW",
+          "description": null,
+          "columns": [
+            {
+              "name": "a__cp_employee",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__l_employee_firstname",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__l_employee_lastname",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__r_department",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__deleted",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "pre-demo_full_createsalary",
+          "type": "VIEW",
+          "description": null,
+          "columns": [
+            {
+              "name": "a__cp_salary",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__r_employee",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 512,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "d__d_salary",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "DATE",
+                "dataTypeName": "date",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__f_payment",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__deleted",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "pre-test_data_redshift",
+          "type": "VIEW",
+          "description": null,
+          "columns": [
+            {
+              "name": "a__b_bool",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 5,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__b_boolean",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 5,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "d__d_timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "DATE",
+                "dataTypeName": "date",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_bigint",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int8",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_decimal",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 14,
+                "precision": 4
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_float",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "FLOAT",
+                "dataTypeName": "float8",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_float4",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "FLOAT",
+                "dataTypeName": "float4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_float8",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "FLOAT",
+                "dataTypeName": "float8",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_int",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_int2",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 20,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_int4",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_integer",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_numeric",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 15,
+                "precision": 6
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_real",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "FLOAT",
+                "dataTypeName": "float4",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_smallint",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "INTEGER",
+                "dataTypeName": "int2",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 11,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "pre-test_data_redshift2",
+          "type": "VIEW",
+          "description": null,
+          "columns": [
+            {
+              "name": "a__b_bool",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 20,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__b_boolean",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 20,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__n_numeric",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 15,
+                "precision": 6
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__deleted",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "BOOLEAN",
+                "dataTypeName": "bool",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__timestamp",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "TIMESTAMP",
+                "dataTypeName": "timestamp",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "pre_a",
+          "type": "VIEW",
+          "description": null,
+          "columns": [
+            {
+              "name": "a__id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 100,
+                "precision": null
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "sample_orders",
+          "type": "VIEW",
+          "description": null,
+          "columns": [
+            {
+              "name": "cp__orderkey",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 12,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__agent",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__agentkey",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "d__shipdate",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "DATE",
+                "dataTypeName": "date",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__quantity",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 6,
+                "precision": 0
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__price",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 8,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__tax",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "sampleorders",
+          "type": "VIEW",
+          "description": null,
+          "columns": [
+            {
+              "name": "cp__orderkey",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 12,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__agent",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "a__agentkey",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 128,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "d__shipdate",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "DATE",
+                "dataTypeName": "date",
+                "length": null,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__quantity",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 6,
+                "precision": 0
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__price",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            },
+            {
+              "name": "x__client_id",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "VARCHAR",
+                "dataTypeName": "varchar",
+                "length": 8,
+                "precision": null
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__tax",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            }
+          ]
+        },
+        {
+          "catalog": "dev",
+          "schema": "natu",
+          "name": "test2_datatype_convert",
+          "type": "VIEW",
+          "description": null,
+          "columns": [
+            {
+              "name": "f__fact_int",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            },
+            {
+              "name": "f__fact_num",
+              "description": null,
+              "dataType": {
+                "dataTypeEnum": "NUMERIC",
+                "dataTypeName": "numeric",
+                "length": 12,
+                "precision": 2
+              },
+              "constraint": null
+            }
+          ]
+        }
+      ],
+      "existingSchemas": [
+        "applifting_test",
+        "applifting_test2",
+        "applifting_test3",
+        "auto_schema_c323a",
+        "bich_test",
+        "dataloaddeletecolumnwithcpktest__2019_08_01_14_33_23_721",
+        "e2e_rest_test_schema_2019_09_03_11_49_07",
+        "e2e_rest_test_schema_2019_09_03_12_15_43",
+        "e2e_rest_test_schema_2019_09_03_12_22_56",
+        "e2e_rest_test_schema_2019_09_03_12_28_12",
+        "e2e_rest_test_schema_2019_09_03_12_39_24",
+        "e2e_rest_test_schema_2019_09_03_13_08_59",
+        "e2e_rest_test_schema_2019_09_03_13_13_12",
+        "gdfreemium",
+        "gdtrial",
+        "gdtrial1",
+        "grest_test",
+        "hoa",
+        "hoa1",
+        "hung_test",
+        "information_schema",
+        "mku_test",
+        "modelmappingresttest__2019_09_17_10_53_38_077",
+        "mtt_team",
+        "myschema",
+        "myschema500",
+        "natu",
+        "ome_gdtrial",
+        "osdiff",
+        "outputstagegeneratorresttest__2019_09_17_10_53_50_229",
+        "pg_catalog",
+        "pg_internal",
+        "phong_qa_test2",
+        "projectmodelgeneratorresttest__2019_09_17_10_53_15_274",
+        "public",
+        "qa_phong",
+        "qa_tien",
+        "qa_tien_2",
+        "se_demo",
+        "se_demo2",
+        "sup_demo",
+        "sup_demo2",
+        "sup_demo3",
+        "verify_schema",
+        "webinar_goodflights",
+        "ã�‚ã�ªã�Ÿã‚’æ„›",
+        "ã�‚ã�ªã�Ÿã‚’æ„›ã�—ã�¦ã�„ã�¾ã�™"
+      ]
+    }
+  }
+}
